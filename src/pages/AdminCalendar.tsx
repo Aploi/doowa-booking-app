@@ -1,10 +1,7 @@
+import * as React from 'react';
+
 const daysInMonth = 31;
-const getDayOfWeek = (day: number) => {
-  // July 2025 starts on Tuesday (day 2 if Sunday is 0)
-  const firstDay = 2;
-  return (firstDay + day - 1) % 7;
-};
-const mockData = Array.from({ length: daysInMonth }, (_, i) => ({
+const mockData = Array.from({ length: daysInMonth }, (_) => ({
   available: 80 + Math.floor(Math.random() * 40),
   booked: Math.floor(Math.random() * 40),
 }));
@@ -58,7 +55,7 @@ export default function AdminCalendar() {
               {/* Render calendar weeks */}
               {(() => {
                 const weeks = [];
-                let cells: JSX.Element[] = [];
+                let cells: React.ReactElement[] = [];
                 let dayNum = 1;
                 let started = false;
                 for (let row = 0; row < 6; row++) {

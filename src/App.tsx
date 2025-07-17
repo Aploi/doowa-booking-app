@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import BookCourt from "./pages/BookCourt";
-import AdminSchedule from "./pages/AdminSchedule";
 import AdminCalendar from "./pages/AdminCalendar";
 
 
