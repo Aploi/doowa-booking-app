@@ -16,7 +16,7 @@ export default function AdminCalendar() {
           <div className="flex items-center gap-4">
             <Link to="/">Back to Home</Link>
             <span className="font-bold text-lg">MTDY SPORTS CENTER SCHEDULE</span>
-            <span className="ml-2 text-blue-500 text-sm cursor-pointer hover:underline">Admin View</span>
+            <span className="ml-2 text-sm">Admin View</span>
           </div>
           <div className="flex gap-4 items-center">
             <button className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm">+ New Booking</button>
