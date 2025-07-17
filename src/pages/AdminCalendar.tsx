@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 const daysInMonth = 31;
 const mockData = Array.from({ length: daysInMonth }, (_) => ({
@@ -13,7 +14,7 @@ export default function AdminCalendar() {
         {/* Top bar */}
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-4">
-            <a href="/" className="text-xs hover:underline">&lt; Back to Home</a>
+            <Link to="/">Back to Home</Link>
             <span className="font-bold text-lg">MTDY SPORTS CENTER SCHEDULE</span>
             <span className="ml-2 text-blue-500 text-sm cursor-pointer hover:underline">Admin View</span>
           </div>
